@@ -1,0 +1,349 @@
+* {
+margin:0;
+padding:0;
+box-sizing: border-box;
+}
+html, body{
+height: 100%;
+}
+
+/*-----------------------GENERAL----------------------*/  
+
+.gridContainer{
+font-family: 'mohave', sans-serif;
+display: grid;
+grid-template-areas: 
+"header"
+"nav"
+"main"
+"footer";
+position: absolute;
+min-width: 100%;
+width:100vw;
+}
+
+/*---HEADER---*/
+
+.header{
+grid-area: "header";
+background-color: #92a794;
+padding-top: 10px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.logo{
+width: 230px;
+grid-area: "header";
+}
+
+/*---NAV---*/
+.nav{
+grid-area: "nav";
+background-color: #92a794;
+list-style-type: none;
+font-size: 20px;
+padding-top: 10px;
+padding-bottom: 10px;
+display: grid;
+grid-template-columns: 220px 220px 220px 220px 220px 220px;
+display: flex;
+justify-content: center;
+transition: all 1s;
+}
+.nav a{
+color: white;
+text-decoration: none;
+display: flex;
+justify-content: center;
+align-items: center;
+padding-left: 10px;
+padding-right: 10px;
+}
+.nav :hover {
+background-color: #dac491;
+}
+
+/*---MAIN---*/
+.main{
+grid-area: "main";
+}
+.main h1 {
+font-size: 35px;
+display: flex;
+justify-content: center;
+color: #3b5249;
+margin-top: 100px;
+margin-bottom: 30px;
+}
+.main section p{
+display: flex;
+text-align: justify;
+margin: 50px;
+font-size: 25px;
+color: #3b5249;
+}
+.detalle{
+display: grid;
+grid-template-columns: 300px;
+grid-row-gap: 20px;
+justify-content: center;
+margin-top: 100px;
+}
+.detalle h2{
+font-family:'Liu Jian Mao Cao', cursive;
+font-size: 30px;
+text-align: center;
+color: #918154;
+}
+.mainImg{
+width: 100%;
+}
+.whatsapp {
+position: fixed;
+top:85%;
+left: 90%;
+width:75px;
+}
+
+/*---FOOTER---*/
+.fijar{
+bottom: 0;
+}
+.footer{
+grid-area: "footer";
+margin-top: 100px;
+padding: 50px;
+background-color: #92a794;
+color: white;
+display: grid;
+grid-template-columns: 300px 300px 300px;
+justify-content: space-between;
+justify-items: center;
+transition: all 1s;
+}
+.footer div ul {
+list-style-type: none;
+}
+.footer div ul   :hover{
+text-decoration:underline;
+}
+.footer a{
+text-decoration: none;
+color:white;
+font-size: 15px;
+}
+.footer h2{
+font-size: 15px;
+display: flex;
+justify-content: center;
+margin-bottom: 15px;
+}
+.pie{
+color: #3b5249;
+display: flex;
+justify-content: center;
+}
+
+/*------------------especificaciones por HTML----------------------*/
+
+/*----HOME----*/
+.imgHome{
+width: 100%;
+}
+
+/*----PRODUCTOS----*/
+.titulos h1{
+font-size: 35px;
+display: flex;
+justify-content: center;
+color: #3b5249;
+padding-top: 5px;
+}
+.titulos h2{
+font-size: 30px;
+display: flex;
+justify-content: center;
+color: #918154;
+padding-top: 25px;
+padding-bottom: 25px;
+}
+.ordenProductos{
+padding-bottom: 40px;
+display: grid;
+grid-template-columns: 300px 300px 300px;
+grid-column-gap: 20px;
+grid-row-gap: 20px;
+justify-content: center;
+justify-items: center;
+align-items: center;
+align-content: center;
+transition: all 1s;
+}
+.ordenProductos img{
+width: 100%;
+}
+.ordenProductos h3{
+color: #918154;
+}
+.ordenProductos h3:hover {
+color: #92a794;
+}
+
+/*----CONTACTO----*/
+.main form div{
+display: flex;
+justify-content: center;
+}
+.formulario{
+padding: 30px;
+}
+
+/*-------------------------------media queries---------------------------*/
+
+@media  screen and (max-width:768px){
+
+.logo{
+width: 350px;
+}
+.nav{
+font-size: 35px;
+}
+.main h1 {
+font-size: 50px;
+margin-top: 80px;
+margin-bottom: 30px;
+}
+.main section p{
+margin: 80px;
+font-size: 40px;
+}
+.detalle{
+display: grid;
+grid-template-columns: 400px;
+grid-row-gap: 25px;
+}
+.detalle h2{
+font-size: 45px;
+margin-top: 20px;
+}
+.whatsapp {
+position: fixed;
+top:80%;
+left: 85%;
+width:10%;
+}
+.footer{
+grid-template-columns: 600px 600px;
+justify-content: space-between;
+justify-items: center;
+align-content: space-between;
+font-size: 35px;
+padding-left: 5px;
+padding-right: 5px;
+}
+.footer ul{
+text-align: center;
+}
+.footer a{
+font-size: 35px;
+}
+.footer h2{
+font-size: 35px;
+}
+.pie{
+font-size: 35px;
+}
+/*---- mq productos----*/
+.titulos h1{
+font-size: 50px;
+}
+.titulos h2{
+font-size: 45px;
+}
+.ordenProductos{
+grid-template-columns: 400px 400px 400px;
+}
+.ordenProductos h3{
+font-size: 40px;
+}
+}
+
+@media screen and (max-width:425px){
+
+.logo{
+width: 250px;
+}
+.nav{
+display: none;
+}
+.main h1 {
+font-size: 25px;
+margin-top: 50px;
+margin-bottom: 30px;
+}
+.main section p{
+margin: 15px;
+font-size: 20px;
+}
+.detalle{
+display: grid;
+grid-template-columns: 300px;
+grid-row-gap: 25px;
+}
+.detalle h2{
+font-size: 30px;
+margin-top: 20px;
+}
+.whatsapp {
+position: fixed;
+top:90%;
+left: 80%;
+width:15%;
+}
+.footer{
+grid-template-columns: 300px;
+grid-row-gap:30px;
+justify-content: center;
+justify-items: center;
+font-size: 20px;
+padding-left: 10px;
+padding-right: 10px;
+}
+.footer ul{
+text-align: center;
+font-size: 20px;
+}
+.footer a{
+font-size: 20px;
+}
+.footer h2{
+font-size: 20px;
+}
+.footer form{
+font-size: 20px;
+}
+.pie{
+font-size: 15px;
+}
+
+/*---- mq productos----*/
+.titulos h1{
+font-size: 30px;
+padding-top: 0px;
+}
+.titulos h2{
+font-size: 25px;
+padding-top: 0px;
+}
+.ordenProductos{
+padding-bottom: 5px;
+grid-template-columns: 150px 150px ;
+grid-column-gap: 5px;
+grid-row-gap: 5px;
+}
+.ordenProductos h3{
+display: none;
+}
+}
