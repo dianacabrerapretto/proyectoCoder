@@ -186,7 +186,7 @@ width: 100%;
 transition: all 1s;
 }
 .ordenProductos img:hover{
-transform: scale(1.5) ;
+transform: scale(1.1) ;
 }
 .ordenProductos h3{
 color: #918154;
