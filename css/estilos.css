@@ -96,21 +96,6 @@ font-family:'Liu Jian Mao Cao', cursive;
 font-size: 30px;
 text-align: center;
 color: #918154;
-animation-duration: 5s;
-animation-name: aparecer;
-animation-iteration-count:infinite;
-animation-delay: 5s;
-}
-@keyframes aparecer {
-0% {
-opacity: 0;
-}
-50%{
-opacity: 1;
-}
-100% {
-opacity: 2;
-}
 }
 .mainImg{
 width: 100%;
