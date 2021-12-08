@@ -1,9 +1,7 @@
 * {
 margin:0;
 padding:0;
-box-sizing: border-box;
 }
-
 
 /*-----------------------GENERAL----------------------*/  
 
@@ -21,18 +19,17 @@ grid-template-areas:
 
 .header{
 grid-area: "header";
-background-color: #92a794;
 padding-top: 10px;
+padding-bottom: 15px;
+background-color: #92a794;
 display: flex;
 justify-content: center;
 align-items: center;
 }
-
 .logo{
-width: 230px;
+width: 200px;
 grid-area: "header";
 }
-
 
 /*---MAIN---*/
 .main{
@@ -81,10 +78,10 @@ width:75px;
 bottom: 0;
 }
 .footer{
-    background-image: linear-gradient(to bottom, #92a794, #3b5249);
+background-image: linear-gradient(to bottom, #92a794, #3b5249);
 grid-area: "footer";
 margin-top: 100px;
-padding: 50px;
+padding: 30px;
 color: white;
 display: grid;
 grid-template-columns: 300px 300px 300px;
@@ -113,56 +110,10 @@ margin-bottom: 15px;
 color: #3b5249;
 display: flex;
 justify-content: center;
+padding-top: 15px;
 }
 
 /*------------------especificaciones por HTML----------------------*/
-
-/*----HOME----*/
-.imgHome{
-width: 100%;
-}
-
-/*----PRODUCTOS----*/
-.titulos h1{
-font-size: 35px;
-display: flex;
-justify-content: center;
-color: #3b5249;
-padding-top: 5px;
-}
-.titulos h2{
-font-size: 30px;
-display: flex;
-justify-content: center;
-color: #918154;
-padding-top: 25px;
-padding-bottom: 25px;
-}
-.ordenProductos{
-padding-bottom: 40px;
-display: grid;
-grid-template-columns: 300px 300px 300px;
-grid-column-gap: 20px;
-grid-row-gap: 20px;
-justify-content: center;
-justify-items: center;
-align-items: center;
-align-content: center;
-transition: all 1s;
-}
-.ordenProductos img{
-width: 100%;
-transition: all 1s;
-}
-.ordenProductos img:hover{
-transform: scale(1.1) ;
-}
-.ordenProductos h3{
-color: #918154;
-}
-.ordenProductos h3:hover {
-color: #92a794;
-}
 
 /*----CONTACTO----*/
 .main form div{
@@ -228,19 +179,6 @@ font-size: 35px;
 .pie{
 font-size: 35px;
 }
-/*---- mq productos----*/
-.titulos h1{
-font-size: 50px;
-}
-.titulos h2{
-font-size: 45px;
-}
-.ordenProductos{
-grid-template-columns: 400px 400px 400px;
-}
-.ordenProductos h3{
-font-size: 40px;
-}
 }
 
 @media screen and (max-width:425px){
@@ -300,23 +238,5 @@ font-size: 20px;
 .pie{
 font-size: 15px;
 }
+}
 
-/*---- mq productos----*/
-.titulos h1{
-font-size: 30px;
-padding-top: 0px;
-}
-.titulos h2{
-font-size: 25px;
-padding-top: 0px;
-}
-.ordenProductos{
-padding-bottom: 5px;
-grid-template-columns: 150px 150px ;
-grid-column-gap: 5px;
-grid-row-gap: 5px;
-}
-.ordenProductos h3{
-display: none;
-}
-}
