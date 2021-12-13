@@ -54,17 +54,20 @@ grid-area: "main";
 font-size: 35px;
 display: flex;
 justify-content: center;
+text-align: center;
 color: #3b5249;
 margin-top: 100px;
-margin-bottom: 15px;
+margin-bottom: 25px;
+margin-left: 100px;
+margin-right: 100px;
 }
 .main h2{
-    font-size: 30px;
-    display: flex;
-    justify-content: center;
-    color: #3b5249;
-    margin-top: 80px;
-    margin-bottom: 50px;
+font-size: 30px;
+display: flex;
+justify-content: center;
+color: #3b5249;
+margin-top: 70px;
+margin-bottom: 40px;
 }
 .main section p{
 display: flex;
@@ -163,7 +166,12 @@ width: 350px;
 .main h1 {
 font-size: 50px;
 margin-top: 80px;
-margin-bottom: 30px;
+margin-bottom: 15px;
+}
+.main h2{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 15px;
 }
 .main section p{
 margin: 80px;
@@ -220,7 +228,12 @@ width: 200px;
 .main h1 {
 font-size: 20px;
 margin-top: 40px;
-margin-bottom: 20px;
+margin-bottom: 5px;
+}
+.main h2{
+    font-size: 20px;
+    margin-top: 30px;
+margin-bottom: 15px;
 }
 
 .main section p{
