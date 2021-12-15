@@ -1,0 +1,132 @@
+/*-------------------------------media queries---------------------------*/
+
+@media  screen and (max-width:768px){
+
+    .logo{
+    width: 350px;
+    }
+    .main h1 {
+    font-size: 50px;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    }
+    .main h2{
+    font-size: 40px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    }
+    .main section p{
+    margin: 80px;
+    font-size: 35px;
+    }
+    .detalle{
+    display: grid;
+    grid-template-columns: 400px;
+    grid-row-gap: 25px;
+    }
+    .detalle h2{
+    font-size: 45px;
+    margin-top: 20px;
+    }
+    .whatsapp {
+    position: fixed;
+    z-index: 2;
+    top:80%;
+    left: 85%;
+    width:8%;
+    }
+    .footer{
+    grid-template-columns: 600px 600px;
+    justify-content: space-between;
+    justify-items: center;
+    align-content: space-between;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+    .footer ul{
+    text-align: center;
+    }
+    .footer a{
+    font-size: 20px;
+    }
+    .footer h2{
+    font-size: 20px;
+    }
+    .pie{
+    font-size: 20px;
+    }
+    /*---html contacto---*/
+    .formulario{
+    font-size: 20px;
+    }
+    }
+    
+    @media screen and (max-width:425px){
+    
+    .logo{
+    width: 200px;
+    }
+    .main h1 {
+    font-size: 20px;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    }
+    .main h2{
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    }
+    .main section p{
+    margin: 25px;
+    font-size: 15px;
+    }
+    .detalle{
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row-gap: 25px;
+    margin-top: 50px;
+    }
+    .detalle h2{
+    font-size: 30px;
+    margin-top: 10px;
+    }
+    .whatsapp {
+    position: fixed;
+    z-index: 2;
+    top:90%;
+    left: 80%;
+    width:15%;
+    }
+    .footer{
+    grid-template-columns: 300px;
+    grid-row-gap:30px;
+    justify-content: center;
+    justify-items: center;
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 50px;
+    }
+    .footer ul{
+    text-align: center;
+    font-size: 15px;
+    padding:0;
+    }
+    .footer a{
+    font-size: 15px;
+    }
+    .footer h2{
+    font-size: 15px;
+    }
+    .footer form{
+    font-size: 15px;
+    }
+    .pie{
+    font-size: 15px;
+    }
+    /*---html contacto---*/
+    .formulario{
+    font-size: 15px;
+    }
+    }

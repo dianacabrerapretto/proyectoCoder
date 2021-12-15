@@ -1,0 +1,80 @@
+.main{
+    grid-area: "main";
+    h1 {
+        font-size: 35px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $text-color;
+        margin-top: 100px;
+        margin-bottom: 25px;
+        margin-left: 100px;
+        margin-right: 100px;
+        }
+    h2{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        color: $text-color;
+        margin-top: 70px;
+        margin-bottom: 40px;
+        }
+    section p{
+        display: flex;
+        text-align: justify;
+        margin-left: 150px;
+        margin-right: 150px;
+        font-size: 25px;
+        color: $text-color;
+        }
+}
+.detalle {
+    display: grid;
+    grid-template-columns: 300px;
+    grid-row-gap: 20px;
+    justify-content: center;
+    margin-top: 100px;
+    animation-duration: 5s;
+    animation-name: aparecer;
+    animation-iteration-count:infinite;
+        h2{
+            font-family:'Liu Jian Mao Cao', cursive;
+            font-size: 30px;
+            text-align: center;
+            color: $text-color-secondary;
+        }
+        Img{
+        width: 100%;
+        }
+    }
+    @keyframes aparecer {
+        0% {
+        opacity: 0;
+        }
+        50%{
+        opacity: 1;
+        }
+        100% {
+        opacity: 2;
+        }
+        } 
+        /*------------------especificaciones por HTML----------------------*/
+
+/*----PRODUCTO----*/
+.textCard{
+    color: $text-color-secondary;
+    }
+    .card{
+    transition: all 1s;
+    }
+    .card:hover{
+    transform: scale(1.2);
+    }
+    /*----CONTACTO----*/
+.main form div{
+    display: flex;
+    justify-content: center;
+    }
+    .formulario{
+    padding: 30px;
+    }    

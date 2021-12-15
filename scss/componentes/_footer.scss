@@ -1,0 +1,41 @@
+/*---------FOOTER---------*/
+.fijar{
+    bottom: 0;
+}
+.footer{
+    background-image: linear-gradient(to bottom, #92a794, #3b5249);
+    grid-area: "footer";
+    margin-top: 100px;
+    padding: 30px;
+    color: $color-base;
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    justify-content: space-between;
+    justify-items: center;
+    transition: all 1s;
+    div ul {
+        list-style-type: none;
+    & :hover{
+        text-decoration:underline;
+        }
+    }
+    a{
+        text-decoration: none;
+        color: $color-base;
+        font-size: 15px;
+    }
+    h2{
+        font-size: 15px;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+    }
+}
+.pie{
+    color: $text-color;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    }
+
+

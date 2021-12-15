@@ -1,0 +1,17 @@
+/*----------GENERAL---------*/
+.gridContainer{
+    font-family: 'mohave', sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+}
+.whatsapp {
+    position: fixed;
+    z-index: 2;
+    top:85%;
+    left: 90%;
+    width:75px;
+    }

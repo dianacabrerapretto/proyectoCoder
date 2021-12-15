@@ -1,0 +1,9 @@
+/*---------NAV---------*/
+.navbar{
+    transition: all 1s;
+    li{
+        &:hover{
+            background-color: $bg-color-hov;
+        }
+        }
+    }
