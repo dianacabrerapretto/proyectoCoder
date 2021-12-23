@@ -10,7 +10,7 @@
         margin-bottom: 25px;
         margin-left: 100px;
         margin-right: 100px;
-        }
+    }
     h2{
         font-size: 30px;
         display: flex;
@@ -18,8 +18,9 @@
         color: $text-color;
         margin-top: 70px;
         margin-bottom: 40px;
-        }
-    section p{
+    }
+    section {
+        p{
         display: flex;
         text-align: justify;
         margin-left: 150px;
@@ -27,6 +28,7 @@
         font-size: 25px;
         color: $text-color;
         }
+    }
 }
 .detalle {
     display: grid;
@@ -42,11 +44,11 @@
             font-size: 30px;
             text-align: center;
             color: $text-color-secondary;
-        }
+    }
         Img{
         width: 100%;
-        }
     }
+}
     @keyframes aparecer {
         0% {
         opacity: 0;
@@ -60,21 +62,35 @@
         } 
         /*------------------especificaciones por HTML----------------------*/
 
+/*----FLORES SECAS----*/
+.imagen-fondo{
+    background-image: url(../imagenes/homeDos.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 10rem;
+}
+
 /*----PRODUCTO----*/
 .textCard{
     color: $text-color-secondary;
     }
-    .card{
+.card{
     transition: all 1s;
-    }
-    .card:hover{
+}
+.card:hover{
     transform: scale(1.2);
-    }
+}
     /*----CONTACTO----*/
-.main form div{
-    display: flex;
-    justify-content: center;
+.main {
+    form {
+        div{
+            display: flex;
+            justify-content: center;
+        }
     }
-    .formulario{
+}
+.formulario{
     padding: 30px;
-    }    
+}    

@@ -91,6 +91,15 @@ html, body {
     opacity: 2; } }
 
 /*------------------especificaciones por HTML----------------------*/
+/*----FLORES SECAS----*/
+.imagen-fondo {
+  background-image: url(../imagenes/homeDos.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 10rem; }
+
 /*----PRODUCTO----*/
 .textCard {
   color: #918154; }

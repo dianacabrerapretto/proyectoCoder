@@ -15,8 +15,8 @@
     transition: all 1s;
     div ul {
         list-style-type: none;
-    & :hover{
-        text-decoration:underline;
+        & :hover{
+            text-decoration:underline;
         }
     }
     a{
@@ -36,6 +36,6 @@
     display: flex;
     justify-content: center;
     padding-top: 15px;
-    }
+}
 
 
