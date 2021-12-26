@@ -1,16 +1,22 @@
 /*------------HEADER----------*/
 .header{
     grid-area: "header";
-    padding-top: 10px;
-    padding-bottom: 15px;
-    background-color: $bg-color;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     a{
         img{
-        width: 200px;
         grid-area: "header";
+        width: 200px;
         }
     }
+}
+/*----aqui aplico un mixin-----*/
+@mixin parametros {
+        padding-top: 10px;
+        padding-bottom: 15px;
+        background-color: $bg-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+}
+.parametros{
+    @include parametros;
 }

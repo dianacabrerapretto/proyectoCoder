@@ -24,18 +24,20 @@
         color: $color-base;
         font-size: 15px;
     }
-    h2{
+    h3{
         font-size: 15px;
         display: flex;
         justify-content: center;
         margin-bottom: 15px;
     }
 }
-.pie{
-    color: $text-color;
-    display: flex;
-    justify-content: center;
-    padding-top: 15px;
+.boton{
+    border: solid 1px #92a794;
+}
+.boton-primario{
+    @extend .boton;
+    color: #918154;
+    margin: 5px;
 }
 
 

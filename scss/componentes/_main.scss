@@ -2,22 +2,22 @@
     grid-area: "main";
     h1 {
         font-size: 35px;
-        display: flex;
-        justify-content: center;
+        font-weight: bold;
+        display:flex;
+        justify-content:center;
         text-align: center;
-        color: $text-color;
-        margin-top: 100px;
-        margin-bottom: 25px;
+        margin-top: 75px;
+        margin-bottom: 45px;
         margin-left: 100px;
         margin-right: 100px;
     }
     h2{
         font-size: 30px;
-        display: flex;
-        justify-content: center;
-        color: $text-color;
-        margin-top: 70px;
-        margin-bottom: 40px;
+        font-weight: bold;
+        display:flex;
+        justify-content:center;
+        margin-top: 50px;
+        margin-bottom: 30px;
     }
     section {
         p{
@@ -26,10 +26,22 @@
         margin-left: 150px;
         margin-right: 150px;
         font-size: 25px;
-        color: $text-color;
         }
     }
 }
+/*-------aquí aplico un map---------*/
+$colorFuente: (
+    h1:#918154,
+    h2:#dac491,
+    p:#92a794
+);
+
+@each $texto, $color in $colorFuente {
+    .main #{$texto}{
+        color: $color;
+    }
+}
+
 .detalle {
     display: grid;
     grid-template-columns: 300px;
@@ -39,12 +51,6 @@
     animation-duration: 5s;
     animation-name: aparecer;
     animation-iteration-count:infinite;
-        h2{
-            font-family:'Liu Jian Mao Cao', cursive;
-            font-size: 30px;
-            text-align: center;
-            color: $text-color-secondary;
-    }
         Img{
         width: 100%;
     }
@@ -64,7 +70,7 @@
 
 /*----FLORES SECAS----*/
 .imagen-fondo{
-    background-image: url(../imagenes/homeDos.png);
+    background-image: url(../imagenes/fondo.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
@@ -82,15 +88,8 @@
 .card:hover{
     transform: scale(1.2);
 }
-    /*----CONTACTO----*/
-.main {
-    form {
-        div{
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
+/*----CONTACTO----*/
 .formulario{
-    padding: 30px;
-}    
+    margin-left: 500px;
+    margin-right: 500px;
+}
