@@ -6,8 +6,8 @@
         display:flex;
         justify-content:center;
         text-align: center;
-        margin-top: 75px;
-        margin-bottom: 45px;
+        margin-top: 50px;
+        margin-bottom: 30px;
         margin-left: 100px;
         margin-right: 100px;
     }
@@ -21,14 +21,12 @@
     }
     section {
         p{
-        display: flex;
-        text-align: justify;
-        margin-left: 150px;
-        margin-right: 150px;
+        margin-bottom: 20px;
         font-size: 25px;
         }
     }
 }
+
 /*-------aquí aplico un map---------*/
 $colorFuente: (
     h1:#918154,
@@ -42,40 +40,33 @@ $colorFuente: (
     }
 }
 
-.detalle {
-    display: grid;
-    grid-template-columns: 300px;
-    grid-row-gap: 20px;
-    justify-content: center;
-    margin-top: 100px;
-    animation-duration: 5s;
-    animation-name: aparecer;
-    animation-iteration-count:infinite;
-        Img{
-        width: 100%;
+.principal{
+    grid-area: "main";
+    grid-template-columns:300px 300px
+;
+}
+
     }
 }
-    @keyframes aparecer {
-        0% {
-        opacity: 0;
-        }
-        50%{
-        opacity: 1;
-        }
-        100% {
-        opacity: 2;
-        }
-        } 
-        /*------------------especificaciones por HTML----------------------*/
+ 
+/*------------------especificaciones por HTML----------------------*/
 
 /*----FLORES SECAS----*/
-.imagen-fondo{
-    background-image: url(../imagenes/fondo.png);
+
+@mixin fondo{
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    height: 10rem;
+    height: 15rem;
+}
+.imagen-fondo{
+    background-image: url(../imagenes/fondo.png);
+    @include fondo;
+}
+.imagen-fondo-dos{
+    background-image:url(../imagenes/fondoDos.png);
+    @include fondo;
 }
 
 /*----PRODUCTO----*/
