@@ -16,18 +16,13 @@
         font-weight: bold;
         display:flex;
         justify-content:center;
-        margin-top: 50px;
+        margin-top: 30px;
         margin-bottom: 30px;
-    }
-    section {
-        p{
-        margin-bottom: 20px;
-        font-size: 25px;
-        }
     }
 }
 
 /*-------aquí aplico un map---------*/
+
 $colorFuente: (
     h1:#918154,
     h2:#dac491,
@@ -41,17 +36,40 @@ $colorFuente: (
 }
 
 .principal{
-    grid-area: "main";
-    grid-template-columns:300px 300px
-;
-}
-
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    font-size: 20px;
+    text-align: justify;
+    p{
+    padding-top:10px;
+    padding-bottom:10px;
+    padding-left:50px;
     }
+}
+.detalle{
+    width:40%;
+    padding-left:80px;
+    padding-right:80px;
+    padding-top:20px;
+    padding-bottom:20px;
 }
  
 /*------------------especificaciones por HTML----------------------*/
 
 /*----FLORES SECAS----*/
+
+.principal-fs{
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+/*---aqui aplico un mixin----*/
 
 @mixin fondo{
     background-repeat: no-repeat;
@@ -70,6 +88,7 @@ $colorFuente: (
 }
 
 /*----PRODUCTO----*/
+
 .textCard{
     color: $text-color-secondary;
     }
@@ -79,7 +98,14 @@ $colorFuente: (
 .card:hover{
     transform: scale(1.2);
 }
+.tocados{
+    width:30%;
+    margin-left: 450px;
+    margin-top: 150px;
+}
+
 /*----CONTACTO----*/
+
 .formulario{
     margin-left: 500px;
     margin-right: 500px;

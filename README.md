@@ -1,7 +1,9 @@
 # proyectoCoder
 Este es el repositorio para el proyecto de CoderHouse
 
-<h1 align="center">Hi 👋, I'm Diana Cabrera</h1>
+<h1 align="center">Hola 👋, soy Diana Cabrera</h1>
+<h3 align="center">Estudiante de Desarrollo Full Stack</h3>
+
 <h3 align="left">Connect with me:</h3>
 <p align="left">
 </p>

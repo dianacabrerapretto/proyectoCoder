@@ -1,4 +1,5 @@
 /*------------HEADER----------*/
+
 .header{
     grid-area: "header";
     a{
@@ -8,7 +9,9 @@
         }
     }
 }
+
 /*----aqui aplico un mixin-----*/
+
 @mixin parametros {
         padding-top: 10px;
         padding-bottom: 15px;
