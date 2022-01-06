@@ -6,7 +6,6 @@
 .footer{
     background-image: linear-gradient(to bottom, #92a794, #3b5249);
     grid-area: "footer";
-    margin-top: 100px;
     padding: 30px;
     color: $color-base;
     display: grid;
@@ -14,10 +13,12 @@
     justify-content: space-between;
     justify-items: center;
     transition: all 1s;
-    div ul {
+    div {
+        ul {
         list-style-type: none;
         & :hover{
             text-decoration:underline;
+            }
         }
     }
     a{

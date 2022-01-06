@@ -26,7 +26,7 @@
 $colorFuente: (
     h1:#918154,
     h2:#dac491,
-    p:#92a794
+    p:#3b5249,
 );
 
 @each $texto, $color in $colorFuente {
@@ -96,7 +96,7 @@ $colorFuente: (
     transition: all 1s;
 }
 .card:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .tocados{
     width:30%;
