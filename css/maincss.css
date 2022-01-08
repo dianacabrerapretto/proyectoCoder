@@ -59,7 +59,7 @@ html, body {
     font-weight: bold;
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 30px; }
 
 /*-------aquí aplico un map---------*/
@@ -80,7 +80,6 @@ html, body {
   font-size: 20px;
   text-align: justify; }
   .principal p {
-    padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 50px; }
 
@@ -88,8 +87,7 @@ html, body {
   width: 40%;
   padding-left: 80px;
   padding-right: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px; }
+  padding-bottom: 50px; }
 
 /*------------------especificaciones por HTML----------------------*/
 /*----FLORES SECAS----*/
@@ -97,7 +95,6 @@ html, body {
   margin-left: 50px;
   margin-right: 50px;
   margin-bottom: 20px;
-  margin-top: 20px;
   font-size: 20px;
   text-align: justify; }
 
@@ -131,7 +128,8 @@ html, body {
 .tocados {
   width: 30%;
   margin-left: 450px;
-  margin-top: 150px; }
+  margin-top: 130px;
+  margin-bottom: 100px; }
 
 /*----CONTACTO----*/
 .formulario {
@@ -153,6 +151,7 @@ html, body {
   justify-items: center;
   transition: all 1s; }
   .footer div ul {
+    padding-left: 0;
     list-style-type: none; }
     .footer div ul :hover {
       text-decoration: underline; }
@@ -165,6 +164,10 @@ html, body {
     display: flex;
     justify-content: center;
     margin-bottom: 15px; }
+
+.icon {
+  width: 30px;
+  padding-right: 10px; }
 
 .boton, .boton-primario {
   border: solid 1px #92a794; }
@@ -209,18 +212,16 @@ html, body {
     width: 8%; }
   .footer {
     grid-template-columns: 600px 600px;
-    justify-content: space-between;
     justify-items: center;
-    align-content: space-between;
     font-size: 20px;
     padding-left: 5px;
     padding-right: 5px; }
-  .footer ul {
-    text-align: center; }
-  .footer a {
-    font-size: 20px; }
-  .footer h3 {
-    font-size: 20px; }
+    .footer ul {
+      text-align: left; }
+    .footer a {
+      font-size: 25px; }
+    .footer h3 {
+      font-size: 25px; }
   /*----html flores secas---*/
   .principal-fs {
     margin-left: 70px;
@@ -250,18 +251,16 @@ html, body {
   .logo {
     width: 200px; }
   .main h1 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 40px;
-    margin-bottom: 5px; }
+    margin-bottom: 25px; }
   .main h2 {
-    font-size: 20px;
+    font-size: 25px;
     margin-top: 30px;
     margin-bottom: 15px; }
   .principal {
     margin-left: 20px;
     margin-right: 20px;
-    margin-bottom: 5px;
-    margin-top: 5px;
     font-size: 20px; }
     .principal p {
       padding-top: 5px;
@@ -273,7 +272,7 @@ html, body {
   .whatsapp {
     position: fixed;
     z-index: 2;
-    top: 90%;
+    top: 85%;
     left: 80%;
     width: 15%; }
   .footer {
@@ -285,16 +284,16 @@ html, body {
     padding-left: 10px;
     padding-right: 10px;
     margin-top: 50px; }
-  .footer ul {
-    text-align: center;
-    font-size: 15px;
-    padding: 0; }
-  .footer a {
-    font-size: 15px; }
-  .footer h2 {
-    font-size: 15px; }
-  .footer form {
-    font-size: 15px; }
+    .footer ul {
+      text-align: center;
+      font-size: 15px;
+      padding: 0; }
+    .footer a {
+      font-size: 15px; }
+    .footer h3 {
+      font-size: 15px; }
+    .footer form {
+      font-size: 15px; }
   .pie {
     font-size: 15px; }
   /*----html flores secas---*/
@@ -309,6 +308,9 @@ html, body {
       padding-bottom: 5px;
       padding-left: 15px;
       margin-right: 20px; }
+  /*---htmls productos---*/
+  .card {
+    margin-bottom: 25px; }
   /*---html tocados---*/
   .tocados {
     display: none; }

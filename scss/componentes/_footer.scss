@@ -15,8 +15,9 @@
     transition: all 1s;
     div {
         ul {
-        list-style-type: none;
-        & :hover{
+            padding-left: 0;
+            list-style-type: none;
+            & :hover{
             text-decoration:underline;
             }
         }
@@ -32,6 +33,10 @@
         justify-content: center;
         margin-bottom: 15px;
     }
+}
+.icon{
+    width: 30px;
+    padding-right: 10px;
 }
 .boton{
     border: solid 1px #92a794;
